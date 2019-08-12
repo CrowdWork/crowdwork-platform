@@ -1,0 +1,239 @@
+{
+    "key": "group_5c173f4f47eea",
+    "title": "Service Page",
+    "fields": [
+        {
+            "key": "field_5c3f3d7aab6cd",
+            "label": "",
+            "name": "task_set-repeater",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "100",
+                "class": "",
+                "id": ""
+            },
+            "show_fields_options": "",
+            "collapsed": "field_5c7fe7a1facf1",
+            "min": 1,
+            "max": 0,
+            "layout": "block",
+            "button_label": "Add Task",
+            "sub_fields": [
+                {
+                    "key": "field_5c7fe7a1facf1",
+                    "label": "Task",
+                    "name": "task-heading",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "80",
+                        "class": "",
+                        "id": ""
+                    },
+                    "show_fields_options": "",
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_5c7fe73afacf0",
+                    "label": "Payout",
+                    "name": "payout",
+                    "type": "number",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "20",
+                        "class": "",
+                        "id": ""
+                    },
+                    "show_fields_options": "",
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "$",
+                    "append": "",
+                    "min": "",
+                    "max": "",
+                    "step": ""
+                },
+                {
+                    "key": "field_5c7fe62ffacef",
+                    "label": "",
+                    "name": "subtask-repeater",
+                    "type": "repeater",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "100",
+                        "class": "",
+                        "id": ""
+                    },
+                    "show_fields_options": "",
+                    "collapsed": "",
+                    "min": 0,
+                    "max": 0,
+                    "layout": "row",
+                    "button_label": "",
+                    "sub_fields": [
+                        {
+                            "key": "field_5c800f19a5bdf",
+                            "label": "",
+                            "name": "subtask",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "show_fields_options": "",
+                            "default_value": "",
+                            "placeholder": "Subtask",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        }
+                    ]
+                },
+                {
+                    "key": "field_5c3f3d88ab6ce",
+                    "label": "Task Owner",
+                    "name": "task_owner",
+                    "type": "user",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "50",
+                        "class": "",
+                        "id": ""
+                    },
+                    "show_fields_options": "",
+                    "role": [
+                        "member",
+                        "administrator"
+                    ],
+                    "allow_null": 0,
+                    "multiple": 0,
+                    "return_format": "array"
+                },
+                {
+                    "key": "field_5c17c6e611fd1",
+                    "label": "Category",
+                    "name": "task_category",
+                    "type": "taxonomy",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "50",
+                        "class": "",
+                        "id": ""
+                    },
+                    "show_fields_options": "",
+                    "taxonomy": "category",
+                    "field_type": "checkbox",
+                    "add_term": 1,
+                    "save_terms": 1,
+                    "load_terms": 1,
+                    "return_format": "object",
+                    "multiple": 0,
+                    "allow_null": 0
+                }
+            ]
+        },
+        {
+            "key": "field_5c70201585e9b",
+            "label": "Customer",
+            "name": "customer",
+            "type": "user",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "show_fields_options": "",
+            "role": [
+                "customer"
+            ],
+            "allow_null": 0,
+            "multiple": 0,
+            "return_format": "id"
+        },
+        {
+            "key": "field_5c701fc285e9a",
+            "label": "Relationship",
+            "name": "relationship",
+            "type": "relationship",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "show_fields_options": "",
+            "post_type": [
+                "proposals",
+                "product"
+            ],
+            "taxonomy": "",
+            "filters": [
+                "search",
+                "post_type"
+            ],
+            "elements": "",
+            "min": "",
+            "max": "",
+            "return_format": "id"
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "user_role",
+                "operator": "==",
+                "value": "member"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "acf_after_title",
+    "style": "seamless",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": [
+        "permalink",
+        "the_content",
+        "excerpt",
+        "discussion",
+        "comments",
+        "revisions",
+        "slug",
+        "author",
+        "format",
+        "page_attributes",
+        "featured_image",
+        "categories",
+        "tags",
+        "send-trackbacks"
+    ],
+    "active": 1,
+    "description": "",
+    "modified": 1557798656
+}

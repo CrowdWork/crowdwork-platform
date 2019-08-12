@@ -1,0 +1,345 @@
+{
+    "key": "group_5d339fcbcaefc",
+    "title": "Content Layouts",
+    "fields": [
+        {
+            "key": "field_5d33a3aa123fe",
+            "label": "Sections",
+            "name": "add_sections",
+            "type": "flexible_content",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "show_fields_options": "",
+            "acfe_permissions": "",
+            "acfe_flexible_stylised_button": 1,
+            "acfe_flexible_layouts_thumbnails": 1,
+            "acfe_flexible_layouts_templates": 1,
+            "acfe_flexible_layouts_previews": 1,
+            "acfe_flexible_close_button": 0,
+            "acfe_flexible_copy_paste": 0,
+            "acfe_flexible_modal_edition": 1,
+            "acfe_flexible_modal": {
+                "acfe_flexible_modal_enabled": "1",
+                "acfe_flexible_modal_title": "Add Section",
+                "acfe_flexible_modal_col": "1",
+                "acfe_flexible_modal_categories": "1"
+            },
+            "layouts": {
+                "layout_5d33a3b0eecaf": {
+                    "key": "layout_5d33a3b0eecaf",
+                    "name": "content_types",
+                    "label": "Content Types",
+                    "display": "row",
+                    "sub_fields": [
+                        {
+                            "key": "field_5d33a00ba5e8d",
+                            "label": "Events",
+                            "name": "events",
+                            "type": "repeater",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "show_fields_options": "",
+                            "acfe_permissions": "",
+                            "collapsed": "",
+                            "min": 0,
+                            "max": 0,
+                            "layout": "row",
+                            "button_label": "Add Event",
+                            "sub_fields": [
+                                {
+                                    "key": "field_5d339fcbd234f",
+                                    "label": "Featured Image",
+                                    "name": "thumbnail_id",
+                                    "type": "image",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "acfe_permissions": "",
+                                    "return_format": "id",
+                                    "preview_size": "medium",
+                                    "library": "all",
+                                    "min_width": "",
+                                    "min_height": "",
+                                    "min_size": "",
+                                    "max_width": "",
+                                    "max_height": "",
+                                    "max_size": "",
+                                    "mime_types": "",
+                                    "acfe_thumbnail": 1,
+                                    "acfe_validate": "",
+                                    "acfe_update": ""
+                                },
+                                {
+                                    "key": "field_5d339fcbd23be",
+                                    "label": "Title",
+                                    "name": "event_title",
+                                    "type": "text",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "acfe_permissions": "",
+                                    "default_value": "",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": "",
+                                    "maxlength": "",
+                                    "acfe_validate": "",
+                                    "acfe_update": ""
+                                },
+                                {
+                                    "key": "field_5d339fcbd242c",
+                                    "label": "Event Location",
+                                    "name": "event_location",
+                                    "type": "textarea",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "acfe_permissions": "",
+                                    "default_value": "",
+                                    "placeholder": "",
+                                    "maxlength": "",
+                                    "rows": 2,
+                                    "new_lines": "br",
+                                    "acfe_validate": "",
+                                    "acfe_update": ""
+                                },
+                                {
+                                    "key": "field_5d339fcbd2694",
+                                    "label": "Event Date",
+                                    "name": "event_date",
+                                    "type": "date_picker",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "33",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "acfe_permissions": "",
+                                    "display_format": "F j, Y",
+                                    "return_format": "F j, Y",
+                                    "first_day": 0,
+                                    "acfe_validate": "",
+                                    "acfe_update": ""
+                                },
+                                {
+                                    "key": "field_5d339fcbd2706",
+                                    "label": "Start Time",
+                                    "name": "start_time",
+                                    "type": "time_picker",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "29",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "display_format": "g:i a",
+                                    "return_format": "g:i a"
+                                },
+                                {
+                                    "key": "field_5d339fcbd2778",
+                                    "label": "End Time",
+                                    "name": "end_time",
+                                    "type": "time_picker",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "33",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "display_format": "g:i a",
+                                    "return_format": "g:i a"
+                                },
+                                {
+                                    "key": "field_5d339fcbd27e6",
+                                    "label": "Details",
+                                    "name": "event_details",
+                                    "type": "wysiwyg",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "acfe_permissions": "",
+                                    "default_value": "",
+                                    "tabs": "all",
+                                    "toolbar": "full",
+                                    "media_upload": 0,
+                                    "delay": 0,
+                                    "acfe_validate": "",
+                                    "acfe_update": ""
+                                },
+                                {
+                                    "key": "field_5d339fcbd2855",
+                                    "label": "External Link",
+                                    "name": "external_link",
+                                    "type": "url",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "placeholder": ""
+                                }
+                            ]
+                        },
+                        {
+                            "key": "field_5d4db3a8bde9b",
+                            "label": "Web Tools",
+                            "name": "web_tools",
+                            "type": "repeater",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "acfe_permissions": "",
+                            "collapsed": "",
+                            "min": 0,
+                            "max": 0,
+                            "layout": "",
+                            "button_label": "",
+                            "sub_fields": [
+                                {
+                                    "key": "field_5d4db3c8bde9c",
+                                    "label": "",
+                                    "name": "web_tool",
+                                    "type": "wysiwyg",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "acfe_permissions": "",
+                                    "default_value": "",
+                                    "tabs": "all",
+                                    "toolbar": "full",
+                                    "media_upload": 1,
+                                    "delay": 0,
+                                    "acfe_validate": "",
+                                    "acfe_update": ""
+                                }
+                            ]
+                        },
+                        {
+                            "key": "field_5d4de9839fc56",
+                            "label": "Post Types",
+                            "name": "post_types",
+                            "type": "acfe_post_types",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "show_fields_options": "",
+                            "acfe_permissions": "",
+                            "field_type": "select",
+                            "return_format": "object",
+                            "acfe_validate": "",
+                            "acfe_update": ""
+                        }
+                    ],
+                    "min": "",
+                    "max": "",
+                    "acfe_flexible_category": "",
+                    "acfe_flexible_render_template": "",
+                    "acfe_flexible_render_style": "",
+                    "acfe_flexible_render_script": "",
+                    "acfe_flexible_thumbnail": "7942"
+                }
+            },
+            "button_label": "Add Section",
+            "min": "",
+            "max": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "slides"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "acf_after_title",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": [
+        "permalink",
+        "the_content",
+        "excerpt",
+        "discussion",
+        "comments",
+        "revisions",
+        "slug",
+        "author",
+        "format",
+        "page_attributes",
+        "featured_image",
+        "categories",
+        "tags",
+        "send-trackbacks"
+    ],
+    "active": 1,
+    "description": "",
+    "acfe_display_title": "",
+    "acfe_autosync": [
+        "php",
+        "json"
+    ],
+    "acfe_permissions": "",
+    "acfe_note": "",
+    "acfe_meta": "",
+    "modified": 1565387270
+}

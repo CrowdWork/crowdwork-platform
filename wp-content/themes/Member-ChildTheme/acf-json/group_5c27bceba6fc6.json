@@ -1,0 +1,128 @@
+{
+    "key": "group_5c27bceba6fc6",
+    "title": "Service Task List",
+    "fields": [
+        {
+            "key": "field_5c2806766ae0d",
+            "label": "Task Fields",
+            "name": "task_fields",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "show_fields_options": "",
+            "collapsed": "field_5c27c7091bfb3",
+            "min": 1,
+            "max": 0,
+            "layout": "table",
+            "button_label": "",
+            "sub_fields": [
+                {
+                    "key": "field_5c27bcf1d2692",
+                    "label": "Service",
+                    "name": "service_heading",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "show_fields_options": "",
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_5c27c7091bfb3",
+                    "label": "Task List",
+                    "name": "task_list",
+                    "type": "repeater",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "show_fields_options": "",
+                    "collapsed": "field_5c27c7201bfb4",
+                    "min": 1,
+                    "max": 0,
+                    "layout": "row",
+                    "button_label": "",
+                    "sub_fields": [
+                        {
+                            "key": "field_5c27c7201bfb4",
+                            "label": "Task",
+                            "name": "task",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "90",
+                                "class": "",
+                                "id": ""
+                            },
+                            "show_fields_options": "",
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "tutorials"
+            },
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "assignments"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": [
+        "permalink",
+        "the_content",
+        "excerpt",
+        "discussion",
+        "comments",
+        "revisions",
+        "slug",
+        "author",
+        "format",
+        "page_attributes",
+        "featured_image",
+        "categories",
+        "tags",
+        "send-trackbacks"
+    ],
+    "active": 0,
+    "description": "",
+    "modified": 1562539283
+}

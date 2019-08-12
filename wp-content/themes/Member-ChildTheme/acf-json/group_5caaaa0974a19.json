@@ -1,0 +1,321 @@
+{
+    "key": "group_5caaaa0974a19",
+    "title": "Member",
+    "fields": [
+        {
+            "key": "field_5ccf964d7c7a5",
+            "label": "Headshot",
+            "name": "thumbnail_id",
+            "type": "image",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "show_fields_options": [
+                "user"
+            ],
+            "return_format": "array",
+            "preview_size": "thumbnail",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
+        },
+        {
+            "key": "field_5caaac1c4a9e1",
+            "label": "Name",
+            "name": "member_name",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5caaac2a4a9e2",
+            "label": "Title",
+            "name": "member_title",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5caaac444a9e3",
+            "label": "Biography",
+            "name": "member_biography",
+            "type": "textarea",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "maxlength": "",
+            "rows": 10,
+            "new_lines": "wpautop"
+        },
+        {
+            "key": "field_5cabbd265ef9f",
+            "label": "Skill Areas",
+            "name": "skill-areas",
+            "type": "checkbox",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "208-66-00\tProfessional: Computer Training, Hospital\/Pharmacy, Legal, Etc.": "208-66-00\tProfessional: Computer Training, Hospital\/Pharmacy, Legal, Etc.",
+                "208-68-00\tProject Management": "208-68-00\tProject Management",
+                "915-02-41\tBid Or Proposal Solicitation Posting Services": "915-02-41\tBid Or Proposal Solicitation Posting Services",
+                "915-02-27\tAdvertising, Internet": "915-02-27\tAdvertising, Internet",
+                "915-20-00\tCall Center Services": "915-20-00\tCall Center Services",
+                "915-22-00\tCommunications Marketing Services": "915-22-00\tCommunications Marketing Services",
+                "915-23-00\tConference Coordinating and Planning Services": "915-23-00\tConference Coordinating and Planning Services",
+                "915-23-10\tCoordinating and Planning Services, Conference": "915-23-10\tCoordinating and Planning Services, Conference",
+                "915-23-40\tPlanning Services, Meeting and Conference": "915-23-40\tPlanning Services, Meeting and Conference",
+                "915-48-00\tGraphic Arts Services (Not Printing)": "915-48-00\tGraphic Arts Services (Not Printing)",
+                "915-51-33\tDevelopment Services, Internet Application": "915-51-33\tDevelopment Services, Internet Application",
+                "915-51-52\tMonitoring Services, Web Site": "915-51-52\tMonitoring Services, Web Site",
+                "915-64-20\tElectronic, Online Reading, Clipping Services": "915-64-20\tElectronic, Online Reading, Clipping Services",
+                "915-73-55\tOutreach Services": "915-73-55\tOutreach Services",
+                "915-79-00\tTelecommunication Services (Not Otherwise Classified)": "915-79-00\tTelecommunication Services (Not Otherwise Classified)",
+                "915-96-00\tWeb Page Design and\/Or Management Services": "915-96-00\tWeb Page Design and\/Or Management Services",
+                "915-96-30\tDesign and Management Services, Web Page": "915-96-30\tDesign and Management Services, Web Page",
+                "915-96-34\tDevelopment Services, Web Page": "915-96-34\tDevelopment Services, Web Page",
+                "915-96-40\tMaintenance Services, Website": "915-96-40\tMaintenance Services, Website",
+                "918-00-00\tConsulting Services": "918-00-00\tConsulting Services",
+                "918-04-00\tAccounting\/Auditing\/Budget Consulting": "918-04-00\tAccounting\/Auditing\/Budget Consulting",
+                "918-04-05\tAccounting\/Auditing\/Budget Consulting Services": "918-04-05\tAccounting\/Auditing\/Budget Consulting Services",
+                "918-06-00\tAdministrative Consulting": "918-06-00\tAdministrative Consulting",
+                "918-04-05\tAdministrative Support, Consulting Services": "918-04-05\tAdministrative Support, Consulting Services",
+                "918-07-00\tAdvertising Consulting": "918-07-00\tAdvertising Consulting",
+                "918-12-00\tAnalytical Studies and Surveys (Consulting)": "918-12-00\tAnalytical Studies and Surveys (Consulting)",
+                "918-20-00\tBusiness Consulting, Small": "918-20-00\tBusiness Consulting, Small",
+                "918-21-00\tBusiness Consulting, Large": "918-21-00\tBusiness Consulting, Large",
+                "918-24-00\tCommunications Consulting": "918-24-00\tCommunications Consulting",
+                "918-27-00\tCommunity Development Consulting": "918-27-00\tCommunity Development Consulting",
+                "918-28-00\tComputer Hardware Consulting": "918-28-00\tComputer Hardware Consulting",
+                "918-29-00\tComputer Software Consulting": "918-29-00\tComputer Software Consulting",
+                "918-29-30\tConsulting Services Related to the Implementation of Software": "918-29-30\tConsulting Services Related to the Implementation of Software",
+                "918-30-00\tComputer Network Consulting": "918-30-00\tComputer Network Consulting",
+                "918-32-00\tConsulting Services (Not Otherwise Classified)": "918-32-00\tConsulting Services (Not Otherwise Classified)",
+                "918-32-10\tConsulting Services (NOT Otherwise Classified)": "918-32-10\tConsulting Services (NOT Otherwise Classified)",
+                "918-36-00\tE-Commerce Consulting": "918-36-00\tE-Commerce Consulting",
+                "918-37-00\tEconomy Consulting": "918-37-00\tEconomy Consulting",
+                "918-38-00\tEducation and Training Consulting": "918-38-00\tEducation and Training Consulting",
+                "918-46-00\tFeasibility Studies (Consulting)": "918-46-00\tFeasibility Studies (Consulting)",
+                "918-49-00\tFinance\/Economics Consulting": "918-49-00\tFinance\/Economics Consulting",
+                "918-49-15\tFinance Economics Consulting": "918-49-15\tFinance Economics Consulting",
+                "918-65-00\tHuman Relations Consulting": "918-65-00\tHuman Relations Consulting",
+                "918-66-00\tHuman Resources Consulting": "918-66-00\tHuman Resources Consulting",
+                "918-71-00\tIT Consulting, (Not Otherwise Classified)": "918-71-00\tIT Consulting, (Not Otherwise Classified)",
+                "918-71-35\tIT Consulting": "918-71-35\tIT Consulting",
+                "918-75-00\tManagement Consulting": "918-75-00\tManagement Consulting",
+                "918-75-50\tManagement Consulting Services": "918-75-50\tManagement Consulting Services",
+                "918-76-00\tMarketing Consulting": "918-76-00\tMarketing Consulting",
+                "918-79-00\tMinority and Small Business Consulting": "918-79-00\tMinority and Small Business Consulting",
+                "918-85-00\tPersonnel\/Employment Consulting": "918-85-00\tPersonnel\/Employment Consulting",
+                "918-90-00\tStrategic Technology Planning and Consulting Services": "918-90-00\tStrategic Technology Planning and Consulting Services",
+                "918-90-75\tStrategic Technology Planning and Consulting Services": "918-90-75\tStrategic Technology Planning and Consulting Services",
+                "918-93-00\tSecurity\/Safety Consulting": "918-93-00\tSecurity\/Safety Consulting",
+                "918-95-00\tTelecommunications Consulting": "918-95-00\tTelecommunications Consulting",
+                "918-95-95\tTelecommunications Consulting": "918-95-95\tTelecommunications Consulting"
+            },
+            "allow_custom": 0,
+            "default_value": [],
+            "layout": "vertical",
+            "toggle": 0,
+            "return_format": "value",
+            "save_custom": 0
+        },
+        {
+            "key": "field_5cc9221bf27fd",
+            "label": "Services",
+            "name": "services",
+            "type": "relationship",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "show_fields_options": "",
+            "post_type": [
+                "product"
+            ],
+            "taxonomy": "",
+            "filters": [
+                "search",
+                "post_type",
+                "taxonomy"
+            ],
+            "elements": [
+                "featured_image"
+            ],
+            "min": "",
+            "max": "",
+            "return_format": "object"
+        },
+        {
+            "key": "field_5cc927aca5456",
+            "label": "Team",
+            "name": "team",
+            "type": "relationship",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "show_fields_options": "",
+            "post_type": [
+                "members"
+            ],
+            "taxonomy": "",
+            "filters": [
+                "search",
+                "post_type",
+                "taxonomy"
+            ],
+            "elements": [
+                "featured_image"
+            ],
+            "min": "",
+            "max": "",
+            "return_format": "object"
+        },
+        {
+            "key": "field_5ccf832310b44",
+            "label": "Logo",
+            "name": "logo",
+            "type": "image",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "show_fields_options": "",
+            "return_format": "array",
+            "preview_size": "medium",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
+        },
+        {
+            "key": "field_5ccf834e10b45",
+            "label": "Capability Statement \/ Resume",
+            "name": "capability_statement__resume",
+            "type": "file",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "show_fields_options": "",
+            "return_format": "array",
+            "library": "all",
+            "min_size": "",
+            "max_size": "",
+            "mime_types": ""
+        },
+        {
+            "key": "field_5ccf84cf0874b",
+            "label": "Website",
+            "name": "website",
+            "type": "url",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "show_fields_options": "",
+            "default_value": "",
+            "placeholder": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "members"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": [
+        "permalink",
+        "the_content",
+        "excerpt",
+        "discussion",
+        "comments",
+        "revisions",
+        "slug",
+        "author",
+        "format",
+        "page_attributes",
+        "tags",
+        "send-trackbacks"
+    ],
+    "active": 0,
+    "description": "",
+    "modified": 1558029959
+}

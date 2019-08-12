@@ -1,0 +1,259 @@
+{
+    "key": "group_5c649bcb9ced6",
+    "title": "New Resource",
+    "fields": [
+        {
+            "key": "field_5c76ef60f6d8a",
+            "label": "",
+            "name": "upload-method",
+            "type": "checkbox",
+            "instructions": "Select One",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "Upload a File": "Upload a File",
+                "Paste Link": "Paste Link"
+            },
+            "allow_custom": 0,
+            "default_value": [],
+            "layout": "horizontal",
+            "toggle": 0,
+            "return_format": "value",
+            "save_custom": 0
+        },
+        {
+            "key": "field_5c649bcbb3342",
+            "label": "Link to Resource",
+            "name": "resource",
+            "type": "url",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5c76ef60f6d8a",
+                        "operator": "==",
+                        "value": "Paste Link"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "100",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": ""
+        },
+        {
+            "key": "field_5c76f049f6d8b",
+            "label": "Upload File",
+            "name": "upload_file",
+            "type": "file",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5c76ef60f6d8a",
+                        "operator": "==",
+                        "value": "Upload a File"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "100",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "url",
+            "library": "all",
+            "min_size": "",
+            "max_size": 10,
+            "mime_types": ""
+        },
+        {
+            "key": "field_5c649bcbc2de5",
+            "label": "Description (optional)",
+            "name": "resource-description",
+            "type": "textarea",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "100",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "maxlength": "",
+            "rows": 4,
+            "new_lines": "wpautop"
+        },
+        {
+            "key": "field_5c649bcbc2cf2",
+            "label": "Category",
+            "name": "category",
+            "type": "taxonomy",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "taxonomy": "category",
+            "field_type": "multi_select",
+            "allow_null": 1,
+            "add_term": 1,
+            "save_terms": 1,
+            "load_terms": 0,
+            "return_format": "id",
+            "multiple": 0
+        },
+        {
+            "key": "field_5c76e29522e8a",
+            "label": "Contributor",
+            "name": "contributor",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "100",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5cde01a3cfbe3",
+            "label": "URL",
+            "name": "screenshot_url",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "show_fields_options": "",
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5cde05c00d689",
+            "label": "Screenshot",
+            "name": "screenshot",
+            "type": "website_screenshot",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "show_fields_options": "",
+            "acfe_permissions": "",
+            "link_field": "field_5cde01a3cfbe3",
+            "shot_width": 300,
+            "shot_height": 300,
+            "save_format": "object",
+            "acfe_validate": "",
+            "acfe_update": "",
+            "preview_size": "thumbnail"
+        },
+        {
+            "key": "field_5d322a03d831f",
+            "label": "Content",
+            "name": "content",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "show_fields_options": "",
+            "acfe_permissions": "",
+            "default_value": "[field content]",
+            "placeholder": "[field content]",
+            "prepend": "",
+            "append": "",
+            "maxlength": "",
+            "acfe_validate": "",
+            "acfe_update": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "grants"
+            }
+        ],
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "resources"
+            }
+        ],
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "tutorials"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "acf_after_title",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": [
+        "permalink",
+        "excerpt",
+        "discussion",
+        "comments",
+        "revisions",
+        "slug",
+        "author",
+        "format",
+        "page_attributes",
+        "categories",
+        "tags",
+        "send-trackbacks"
+    ],
+    "active": 1,
+    "description": "",
+    "acfe_display_title": "",
+    "acfe_autosync": [
+        "json"
+    ],
+    "acfe_permissions": "",
+    "acfe_note": "",
+    "acfe_meta": "",
+    "modified": 1565469332
+}

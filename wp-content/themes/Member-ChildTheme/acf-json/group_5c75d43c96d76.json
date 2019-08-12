@@ -1,0 +1,257 @@
+{
+    "key": "group_5c75d43c96d76",
+    "title": "Order Deliverables",
+    "fields": [
+        {
+            "key": "field_5c762369a5a76",
+            "label": "Deliverables",
+            "name": "",
+            "type": "accordion",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "show_fields_options": "",
+            "open": 1,
+            "multi_expand": 0,
+            "endpoint": 0
+        },
+        {
+            "key": "field_5c75d4424b56f",
+            "label": "",
+            "name": "order_deliverables",
+            "type": "group",
+            "instructions": "After the meeting, use one of the following options to post the notes",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "100",
+                "class": "",
+                "id": ""
+            },
+            "show_fields_options": "",
+            "layout": "row",
+            "sub_fields": [
+                {
+                    "key": "field_5c75d4a54b570",
+                    "label": "Upload File",
+                    "name": "upload_file",
+                    "type": "file",
+                    "instructions": "(ie: If the notes live in a PDF, Microsoft Word or other document, select this option to upload the file)",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "100",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "array",
+                    "library": "uploadedTo",
+                    "min_size": "",
+                    "max_size": 5,
+                    "mime_types": ".pdf, .doc, .docx, .odt, .txt"
+                },
+                {
+                    "key": "field_5c75d5484b571",
+                    "label": "Link to File",
+                    "name": "link_to_file",
+                    "type": "oembed",
+                    "instructions": "(ie: If the notes live in a Google Doc, copy the URL to this field)",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "100",
+                        "class": "",
+                        "id": ""
+                    },
+                    "width": "",
+                    "height": ""
+                }
+            ]
+        },
+        {
+            "key": "field_5c762384a5a77",
+            "label": "",
+            "name": "",
+            "type": "accordion",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "open": 0,
+            "multi_expand": 0,
+            "endpoint": 1
+        },
+        {
+            "key": "field_5c762fbde322c",
+            "label": "Assignments",
+            "name": "",
+            "type": "accordion",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "open": 1,
+            "multi_expand": 1,
+            "endpoint": 0
+        },
+        {
+            "key": "field_5c75d832f234a",
+            "label": "",
+            "name": "assignments",
+            "type": "repeater",
+            "instructions": "Assign tasks to members, add descriptions, due dates, and check off when completed.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "75",
+                "class": "",
+                "id": ""
+            },
+            "show_fields_options": "",
+            "collapsed": "field_5c75d781f2348",
+            "min": 0,
+            "max": 0,
+            "layout": "row",
+            "button_label": "Add Assignment",
+            "sub_fields": [
+                {
+                    "key": "field_5c75d781f2348",
+                    "label": "Task Description",
+                    "name": "task-description",
+                    "type": "textarea",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "70",
+                        "class": "",
+                        "id": ""
+                    },
+                    "show_fields_options": "",
+                    "default_value": "",
+                    "placeholder": "",
+                    "maxlength": "",
+                    "rows": 4,
+                    "new_lines": "wpautop"
+                },
+                {
+                    "key": "field_5c75d994f234c",
+                    "label": "Due Date?",
+                    "name": "due_date",
+                    "type": "true_false",
+                    "instructions": "Select this option if there is a deadline or due date associated with this assignment.",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "10",
+                        "class": "",
+                        "id": ""
+                    },
+                    "show_fields_options": "",
+                    "message": "",
+                    "default_value": 0,
+                    "ui": 0,
+                    "ui_on_text": "",
+                    "ui_off_text": ""
+                },
+                {
+                    "key": "field_5c75d8c8f234b",
+                    "label": "Due Date",
+                    "name": "due_date",
+                    "type": "date_picker",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_5c75d994f234c",
+                                "operator": "==",
+                                "value": "1"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "20",
+                        "class": "",
+                        "id": ""
+                    },
+                    "show_fields_options": "",
+                    "display_format": "F j, Y",
+                    "return_format": "F j, Y",
+                    "first_day": 0
+                }
+            ]
+        },
+        {
+            "key": "field_5c75deabf2350",
+            "label": "Done?",
+            "name": "done",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "7",
+                "class": "",
+                "id": ""
+            },
+            "show_fields_options": "",
+            "message": "",
+            "default_value": 0,
+            "ui": 0,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "members"
+            },
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "projects"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": [
+        "permalink",
+        "the_content",
+        "excerpt",
+        "discussion",
+        "comments",
+        "revisions",
+        "slug",
+        "author",
+        "format",
+        "page_attributes",
+        "featured_image",
+        "categories",
+        "tags",
+        "send-trackbacks"
+    ],
+    "active": 1,
+    "description": "",
+    "modified": 1557244545
+}

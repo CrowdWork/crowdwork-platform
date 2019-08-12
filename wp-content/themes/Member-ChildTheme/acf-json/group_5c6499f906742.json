@@ -1,0 +1,409 @@
+{
+    "key": "group_5c6499f906742",
+    "title": "Client Intake Form",
+    "fields": [
+        {
+            "key": "field_5c8daedd43ffe",
+            "label": "What type of site are you looking for?",
+            "name": "site_type",
+            "type": "select",
+            "instructions": "Select any that apply",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "show_fields_options": "",
+            "choices": {
+                "Events": "Events",
+                "Podcast": "Podcast",
+                "Blog": "Blog",
+                "Portfolio": "Portfolio",
+                "Products & Services": "Products & Services",
+                "Other": "Other"
+            },
+            "default_value": [],
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "return_format": "value",
+            "ajax": 0,
+            "placeholder": ""
+        },
+        {
+            "key": "field_5c8dadc743ff9",
+            "label": "Do you currently have a website?",
+            "name": "do_you_currently_have_a_website",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "show_fields_options": "",
+            "choices": {
+                "Yes": "Yes",
+                "No": "No"
+            },
+            "default_value": [],
+            "allow_null": 1,
+            "multiple": 0,
+            "ui": 0,
+            "return_format": "value",
+            "ajax": 0,
+            "placeholder": ""
+        },
+        {
+            "key": "field_5cadf2400c419",
+            "label": "Which platform is it built with?",
+            "name": "site_platform",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5c8dadc743ff9",
+                        "operator": "==",
+                        "value": "Yes"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "show_fields_options": "",
+            "choices": {
+                "WordPress": "WordPress",
+                "Wix": "Wix",
+                "SquareSpace": "SquareSpace",
+                "GoDaddy": "GoDaddy",
+                "Custom Code": "Custom Code",
+                "Other Pagebuilder": "Other Pagebuilder"
+            },
+            "default_value": [],
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "return_format": "value",
+            "ajax": 0,
+            "placeholder": ""
+        },
+        {
+            "key": "field_5cae190e7e2a8",
+            "label": "Your Preferred Contact Method",
+            "name": "your_preferred_contact_method",
+            "type": "select",
+            "instructions": "Call\r\nEmail\r\nText Message",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "show_fields_options": "",
+            "choices": [],
+            "default_value": [],
+            "allow_null": 1,
+            "multiple": 0,
+            "ui": 0,
+            "return_format": "value",
+            "ajax": 0,
+            "placeholder": ""
+        },
+        {
+            "key": "field_5c8daca143ff4",
+            "label": "Do you have a logo?",
+            "name": "do_you_have_a_logo",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "show_fields_options": "",
+            "choices": {
+                "Yes": "Yes",
+                "No": "No"
+            },
+            "default_value": [],
+            "allow_null": 1,
+            "multiple": 0,
+            "ui": 0,
+            "return_format": "value",
+            "ajax": 0,
+            "placeholder": ""
+        },
+        {
+            "key": "field_5c8dacf343ff5",
+            "label": "Upload Logo",
+            "name": "upload_logo",
+            "type": "image",
+            "instructions": ".jpeg or .png format",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5c8daca143ff4",
+                        "operator": "==",
+                        "value": "Yes"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "show_fields_options": "",
+            "return_format": "array",
+            "preview_size": "thumbnail",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
+        },
+        {
+            "key": "field_5c8dad3a43ff6",
+            "label": "Do you have a color scheme?",
+            "name": "do_you_have_a_color_scheme",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "show_fields_options": "",
+            "choices": {
+                "Yes": "Yes",
+                "No": "No"
+            },
+            "default_value": [],
+            "allow_null": 1,
+            "multiple": 0,
+            "ui": 0,
+            "return_format": "value",
+            "ajax": 0,
+            "placeholder": ""
+        },
+        {
+            "key": "field_5c8dad6c43ff7",
+            "label": "Choose Primary Color",
+            "name": "primary_color",
+            "type": "color_picker",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5c8dad3a43ff6",
+                        "operator": "==",
+                        "value": "Yes"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "show_fields_options": "",
+            "default_value": ""
+        },
+        {
+            "key": "field_5c8dad9643ff8",
+            "label": "Choose Secondary Color",
+            "name": "secondary_color",
+            "type": "color_picker",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5c8dad3a43ff6",
+                        "operator": "==",
+                        "value": "Yes"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "show_fields_options": "",
+            "default_value": ""
+        },
+        {
+            "key": "field_5cae1d3452611",
+            "label": "Your Full Name",
+            "name": "full_name",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "show_fields_options": "",
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5cae1d4de3757",
+            "label": "Email",
+            "name": "email_copy",
+            "type": "email",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "show_fields_options": "",
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_5c8dadec43ffa",
+            "label": "Website URL",
+            "name": "website_url",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5c8dadc743ff9",
+                        "operator": "==",
+                        "value": "Yes"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "show_fields_options": "",
+            "default_value": "",
+            "placeholder": "https:\/\/www.yoursitename.com",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5c8dae1743ffb",
+            "label": "What is your budget range?",
+            "name": "budget_range",
+            "type": "range",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "show_fields_options": "",
+            "default_value": "",
+            "min": "",
+            "max": 5000,
+            "step": 500,
+            "prepend": "$",
+            "append": ""
+        },
+        {
+            "key": "field_5c8dae7b43ffc",
+            "label": "Did someone refer you?",
+            "name": "did_someone_refer_you",
+            "type": "text",
+            "instructions": "If so, please write their name",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "show_fields_options": "",
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5c8daea343ffd",
+            "label": "Any additional thoughts?",
+            "name": "additional_thoughts",
+            "type": "textarea",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "show_fields_options": "",
+            "default_value": "",
+            "placeholder": "",
+            "maxlength": "",
+            "rows": 4,
+            "new_lines": "wpautop"
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "surveys"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "acfe_display_title": "",
+    "acfe_autosync": [
+        "json"
+    ],
+    "acfe_permissions": "",
+    "acfe_note": "",
+    "acfe_meta": "",
+    "modified": 1565386449
+}

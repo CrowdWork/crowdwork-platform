@@ -1,0 +1,254 @@
+{
+    "key": "group_5cae1816d0b9d",
+    "title": "Client Referral Form",
+    "fields": [
+        {
+            "key": "field_5cae19817e2a9",
+            "label": "Referral Type",
+            "name": "referral_type",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "show_fields_options": "",
+            "choices": {
+                "Individual (Entrepreneur\/Freelancer\/Hobbyist)": "Individual (Entrepreneur\/Freelancer\/Hobbyist)",
+                "Small Business": "Small Business",
+                "Organization": "Organization"
+            },
+            "default_value": [],
+            "allow_null": 1,
+            "multiple": 0,
+            "ui": 0,
+            "return_format": "value",
+            "ajax": 0,
+            "placeholder": ""
+        },
+        {
+            "key": "field_5cae1a4ec5394",
+            "label": "The lead has expressed interest in the following:",
+            "name": "lead_interest",
+            "type": "checkbox",
+            "instructions": "Check any that Apply",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "show_fields_options": "",
+            "choices": {
+                "New Website\/Refresh of Existing Website": "New Website\/Refresh of Existing Website",
+                "Audience Expansion — Social Media Marketing or Email Marketing": "Audience Expansion — Social Media Marketing or Email Marketing",
+                "Video Production, Editing, or Photography": "Video Production, Editing, or Photography",
+                "Not Sure": "Not Sure"
+            },
+            "allow_custom": 0,
+            "default_value": [],
+            "layout": "vertical",
+            "toggle": 0,
+            "return_format": "value",
+            "save_custom": 0
+        },
+        {
+            "key": "field_5cae19d47e2aa",
+            "label": "Have you qualified this lead?",
+            "name": "lead_status",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "show_fields_options": "",
+            "message": "",
+            "default_value": 0,
+            "ui": 0,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_5cae1a007e2ab",
+            "label": "Do they have an existing website?",
+            "name": "existing_website",
+            "type": "text",
+            "instructions": "If yes, please paste link here",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "show_fields_options": "",
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5cae1a9fc5395",
+            "label": "Next Steps?",
+            "name": "next_steps",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "show_fields_options": "",
+            "choices": {
+                "I can introduce you via email or phone": "I can introduce you via email or phone",
+                "A member of CrowdWork can contact the lead": "A member of CrowdWork can contact the lead"
+            },
+            "default_value": [],
+            "allow_null": 1,
+            "multiple": 0,
+            "ui": 0,
+            "return_format": "value",
+            "ajax": 0,
+            "placeholder": ""
+        },
+        {
+            "key": "field_5cae1acbc5396",
+            "label": "Please let us know if you have any other thoughts, concerns, or suggestions. Thanks!",
+            "name": "thoughts",
+            "type": "textarea",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "show_fields_options": "",
+            "default_value": "",
+            "placeholder": "",
+            "maxlength": "",
+            "rows": 2,
+            "new_lines": ""
+        },
+        {
+            "key": "field_5cae1d9655f1e",
+            "label": "Your Preferred Method to Receive Commission Payment",
+            "name": "preferred_payment",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "show_fields_options": "",
+            "choices": {
+                "PayPal": "PayPal",
+                "Venmo": "Venmo",
+                "ACH\/Direct Transfer": "ACH\/Direct Transfer",
+                "POP Money": "POP Money",
+                "Check": "Check"
+            },
+            "default_value": [],
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "return_format": "value",
+            "ajax": 0,
+            "placeholder": ""
+        },
+        {
+            "key": "field_5cae18837e2a5",
+            "label": "Your Full Name",
+            "name": "full_name",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "show_fields_options": "",
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5cae18e77e2a6",
+            "label": "Email",
+            "name": "email",
+            "type": "email",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "show_fields_options": "",
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "referrals"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": [
+        "permalink",
+        "the_content",
+        "excerpt",
+        "discussion",
+        "comments",
+        "revisions",
+        "slug",
+        "author",
+        "format",
+        "page_attributes",
+        "featured_image",
+        "categories",
+        "tags",
+        "send-trackbacks"
+    ],
+    "active": 1,
+    "description": "",
+    "acfe_display_title": "",
+    "acfe_autosync": [
+        "json"
+    ],
+    "acfe_permissions": "",
+    "acfe_note": "",
+    "acfe_meta": "",
+    "modified": 1565387341
+}

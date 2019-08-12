@@ -1,0 +1,367 @@
+{
+    "key": "group_57dac84f08846",
+    "title": "Proposal",
+    "fields": [
+        {
+            "key": "field_5ccf1f27496f3",
+            "label": "Total Cost",
+            "name": "total_cost",
+            "type": "number",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": "total-cost"
+            },
+            "show_fields_options": "",
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "$",
+            "append": "",
+            "min": "",
+            "max": "",
+            "step": 27
+        },
+        {
+            "key": "field_5cf6b98306e29",
+            "label": "Discount",
+            "name": "total_discount",
+            "type": "number",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": "total-discount"
+            },
+            "show_fields_options": "",
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "%",
+            "min": "",
+            "max": "",
+            "step": ""
+        },
+        {
+            "key": "field_5c938ee4a47e1",
+            "label": "Product \/ Service Type",
+            "name": "service_type",
+            "type": "post_object",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "show_fields_options": "",
+            "post_type": [
+                "product"
+            ],
+            "taxonomy": [
+                "product_type:simple"
+            ],
+            "allow_null": 1,
+            "multiple": 0,
+            "return_format": "id",
+            "ui": 1
+        },
+        {
+            "key": "field_5cf6ba531f39a",
+            "label": "Customers",
+            "name": "customers",
+            "type": "relationship",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "show_fields_options": "",
+            "post_type": "",
+            "taxonomy": "",
+            "filters": [
+                "search",
+                "post_type",
+                "taxonomy"
+            ],
+            "elements": "",
+            "min": "",
+            "max": "",
+            "return_format": "object"
+        },
+        {
+            "key": "field_5c93c60c25081",
+            "label": "External Document Editor",
+            "name": "",
+            "type": "accordion",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "show_fields_options": "",
+            "open": 1,
+            "multi_expand": 0,
+            "endpoint": 0
+        },
+        {
+            "key": "field_5c7f4f9aa1da8",
+            "label": "Link to Proposal",
+            "name": "link_to_proposal",
+            "type": "oembed",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "100",
+                "class": "",
+                "id": ""
+            },
+            "show_fields_options": "",
+            "width": 1000,
+            "height": 600
+        },
+        {
+            "key": "field_5c93c69525083",
+            "label": "Proposal Details",
+            "name": "",
+            "type": "accordion",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "show_fields_options": "",
+            "open": 0,
+            "multi_expand": 0,
+            "endpoint": 0
+        },
+        {
+            "key": "field_5c7f500600223",
+            "label": "",
+            "name": "proposal_group",
+            "type": "group",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "60",
+                "class": "",
+                "id": ""
+            },
+            "show_fields_options": "",
+            "layout": "block",
+            "sub_fields": [
+                {
+                    "key": "field_5c7f500600225",
+                    "label": "Details",
+                    "name": "",
+                    "type": "accordion",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "show_fields_options": "",
+                    "open": 1,
+                    "multi_expand": 1,
+                    "endpoint": 0
+                },
+                {
+                    "key": "field_5c7f500600224",
+                    "label": "Category",
+                    "name": "category",
+                    "type": "taxonomy",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "100",
+                        "class": "",
+                        "id": ""
+                    },
+                    "show_fields_options": "",
+                    "taxonomy": "category",
+                    "field_type": "multi_select",
+                    "allow_null": 0,
+                    "add_term": 1,
+                    "save_terms": 1,
+                    "load_terms": 1,
+                    "return_format": "object",
+                    "multiple": 0
+                },
+                {
+                    "key": "field_5c7f500600226",
+                    "label": "Tags",
+                    "name": "tags",
+                    "type": "taxonomy",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "100",
+                        "class": "",
+                        "id": ""
+                    },
+                    "show_fields_options": "",
+                    "taxonomy": "post_tag",
+                    "field_type": "multi_select",
+                    "allow_null": 0,
+                    "add_term": 1,
+                    "save_terms": 1,
+                    "load_terms": 1,
+                    "return_format": "id",
+                    "multiple": 0
+                }
+            ]
+        },
+        {
+            "key": "field_5c938ec7a47e0",
+            "label": "Current Website",
+            "name": "current_website",
+            "type": "url",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "show_fields_options": "",
+            "default_value": "",
+            "placeholder": ""
+        },
+        {
+            "key": "field_5c78b50edb13a",
+            "label": "Files",
+            "name": "clone",
+            "type": "clone",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "show_fields_options": "",
+            "clone": [
+                "group_5c2d89cff04b8"
+            ],
+            "display": "group",
+            "layout": "block",
+            "prefix_label": 0,
+            "prefix_name": 0
+        },
+        {
+            "key": "field_5c93c6a125084",
+            "label": "",
+            "name": "",
+            "type": "accordion",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "show_fields_options": "",
+            "open": 0,
+            "multi_expand": 0,
+            "endpoint": 1
+        },
+        {
+            "key": "field_5c8834fa9eceb",
+            "label": "Draft Proposal",
+            "name": "draft_proposal",
+            "type": "url",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "100",
+                "class": "",
+                "id": ""
+            },
+            "show_fields_options": "",
+            "default_value": "",
+            "placeholder": ""
+        },
+        {
+            "key": "field_5c93c62e25082",
+            "label": "",
+            "name": "",
+            "type": "accordion",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "show_fields_options": "",
+            "open": 0,
+            "multi_expand": 0,
+            "endpoint": 1
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "proposals"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "acf_after_title",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": [
+        "permalink",
+        "the_content",
+        "excerpt",
+        "discussion",
+        "comments",
+        "revisions",
+        "author",
+        "format",
+        "page_attributes",
+        "featured_image",
+        "categories",
+        "tags",
+        "send-trackbacks"
+    ],
+    "active": 1,
+    "description": "",
+    "acfe_display_title": "",
+    "acfe_autosync": [
+        "json"
+    ],
+    "acfe_permissions": "",
+    "acfe_note": "",
+    "acfe_meta": "",
+    "modified": 1564670371
+}

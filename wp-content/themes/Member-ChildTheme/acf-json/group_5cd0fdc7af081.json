@@ -1,0 +1,422 @@
+{
+    "key": "group_5cd0fdc7af081",
+    "title": "Assignment",
+    "fields": [
+        {
+            "key": "field_5d312572717be",
+            "label": "Comments",
+            "name": "comments",
+            "type": "wysiwyg",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "acfe_permissions": [
+                "super_admin",
+                "css_js_designer"
+            ],
+            "default_value": "",
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 1,
+            "delay": 0,
+            "acfe_validate": "",
+            "acfe_update": ""
+        },
+        {
+            "key": "field_5ce087a4b3a1a",
+            "label": "Project Details",
+            "name": "",
+            "type": "accordion",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "show_fields_options": "",
+            "open": 0,
+            "multi_expand": 0,
+            "endpoint": 0
+        },
+        {
+            "key": "field_5cda1342b29da",
+            "label": "Relationship",
+            "name": "project_relationship",
+            "type": "relationship",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "acfe_permissions": "",
+            "post_type": [
+                "projects",
+                "wc_crm_accounts"
+            ],
+            "taxonomy": "",
+            "filters": [
+                "post_type"
+            ],
+            "elements": [
+                "featured_image"
+            ],
+            "min": "",
+            "max": "",
+            "return_format": "object",
+            "acfe_bidirectional": {
+                "acfe_bidirectional_enabled": "0"
+            },
+            "acfe_validate": "",
+            "acfe_update": ""
+        },
+        {
+            "key": "field_5d31d40dc04d4",
+            "label": "Order (if applicable)",
+            "name": "order-assignments",
+            "type": "relationship",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "acfe_permissions": "",
+            "post_type": [
+                "shop_order"
+            ],
+            "taxonomy": "",
+            "filters": [
+                "post_type"
+            ],
+            "elements": [
+                "featured_image"
+            ],
+            "min": "",
+            "max": "",
+            "return_format": "object",
+            "acfe_bidirectional": {
+                "acfe_bidirectional_enabled": "0"
+            },
+            "acfe_validate": "",
+            "acfe_update": ""
+        },
+        {
+            "key": "field_5cd1002234dc2",
+            "label": "Project Member",
+            "name": "project_member",
+            "type": "user",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "show_fields_options": "",
+            "role": "",
+            "allow_null": 1,
+            "multiple": 1,
+            "return_format": "array"
+        },
+        {
+            "key": "field_5ce087e7b3a1b",
+            "label": "",
+            "name": "",
+            "type": "accordion",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "show_fields_options": "",
+            "open": 0,
+            "multi_expand": 0,
+            "endpoint": 1
+        },
+        {
+            "key": "field_5cda1dbe779cd",
+            "label": "Task Set",
+            "name": "task_set_repeater",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "100",
+                "class": "task-set",
+                "id": ""
+            },
+            "show_fields_options": "",
+            "collapsed": "field_5cda1dbe779ce",
+            "min": 1,
+            "max": 5,
+            "layout": "block",
+            "button_label": "Add Task",
+            "sub_fields": [
+                {
+                    "key": "field_5cda1dbe779ce",
+                    "label": "Task",
+                    "name": "task-heading",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "90",
+                        "class": "",
+                        "id": ""
+                    },
+                    "acfe_permissions": "",
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": "",
+                    "acfe_validate": "",
+                    "acfe_update": ""
+                },
+                {
+                    "key": "field_5cda2065599f9",
+                    "label": "Done",
+                    "name": "done",
+                    "type": "true_false",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "10",
+                        "class": "",
+                        "id": ""
+                    },
+                    "acfe_permissions": "",
+                    "message": "",
+                    "default_value": 0,
+                    "ui": 1,
+                    "ui_on_text": "",
+                    "ui_off_text": "",
+                    "acfe_validate": "",
+                    "acfe_update": ""
+                },
+                {
+                    "key": "field_5cda1dbe779d0",
+                    "label": "Subtasks",
+                    "name": "subtask-repeater",
+                    "type": "repeater",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "100",
+                        "class": "",
+                        "id": ""
+                    },
+                    "show_fields_options": "",
+                    "collapsed": "",
+                    "min": 0,
+                    "max": 0,
+                    "layout": "row",
+                    "button_label": "Add Subtask",
+                    "sub_fields": [
+                        {
+                            "key": "field_5cda1dbe779d1",
+                            "label": "",
+                            "name": "subtask",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "100",
+                                "class": "",
+                                "id": ""
+                            },
+                            "show_fields_options": "",
+                            "default_value": "",
+                            "placeholder": "Subtask",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        }
+                    ]
+                },
+                {
+                    "key": "field_5cda287ee0211",
+                    "label": "Attachments",
+                    "name": "attachments",
+                    "type": "true_false",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "show_fields_options": "",
+                    "message": "",
+                    "default_value": 0,
+                    "ui": 0,
+                    "ui_on_text": "",
+                    "ui_off_text": ""
+                },
+                {
+                    "key": "field_5cdae549e0212",
+                    "label": "Images and Files",
+                    "name": "attachment_group",
+                    "type": "group",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_5cda287ee0211",
+                                "operator": "==",
+                                "value": "1"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "67",
+                        "class": "",
+                        "id": ""
+                    },
+                    "acfe_permissions": "",
+                    "layout": "table",
+                    "sub_fields": [
+                        {
+                            "key": "field_5cdae55ae0213",
+                            "label": "Images",
+                            "name": "Assignment Images",
+                            "type": "image",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "50",
+                                "class": "",
+                                "id": ""
+                            },
+                            "show_fields_options": "",
+                            "return_format": "array",
+                            "preview_size": "thumbnail",
+                            "library": "all",
+                            "min_width": "",
+                            "min_height": "",
+                            "min_size": "",
+                            "max_width": "",
+                            "max_height": "",
+                            "max_size": "",
+                            "mime_types": ""
+                        },
+                        {
+                            "key": "field_5cdae568e0214",
+                            "label": "Files",
+                            "name": "assignment_files",
+                            "type": "file",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "50",
+                                "class": "",
+                                "id": ""
+                            },
+                            "show_fields_options": "",
+                            "return_format": "array",
+                            "library": "all",
+                            "min_size": "",
+                            "max_size": "",
+                            "mime_types": ""
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "key": "field_5cfe6ce775d7c",
+            "label": "Payout",
+            "name": "payout",
+            "type": "number",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "show_fields_options": "",
+            "default_value": 5,
+            "placeholder": "",
+            "prepend": "$",
+            "append": "",
+            "min": "",
+            "max": "",
+            "step": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "assignments"
+            }
+        ],
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "shop_order"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "acf_after_title",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": [
+        "permalink",
+        "the_content",
+        "excerpt",
+        "discussion",
+        "comments",
+        "revisions",
+        "slug",
+        "author",
+        "format",
+        "page_attributes",
+        "featured_image",
+        "categories",
+        "tags",
+        "send-trackbacks"
+    ],
+    "active": 1,
+    "description": "",
+    "acfe_display_title": "",
+    "acfe_autosync": [
+        "php",
+        "json"
+    ],
+    "acfe_permissions": "",
+    "acfe_note": "",
+    "acfe_meta": "",
+    "modified": 1563547022
+}
